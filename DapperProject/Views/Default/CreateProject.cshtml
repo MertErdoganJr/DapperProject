@@ -1,0 +1,23 @@
+﻿@model DapperProject.Dtos.CreateProjectDto
+
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br /><br />
+    <form method="post">
+        <label>Project Title</label>
+        <input type="text" asp-for="ProjectTitle" class="form-control"/>
+        <br />
+        <label>Project Description</label>
+        <input type="text" asp-for="ProjectDescription" class="form-control" />
+        <br />
+        <label>Project Image URL</label>
+        <input type="text" asp-for="ProjectImageUrl" class="form-control" />
+        <br />
+        <button class="btn btn-primary">Create New Project</button>
+    </form>
+</div>
